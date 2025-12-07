@@ -1,8 +1,8 @@
 var express = require("express")
-const port = process.env.port || 5000;
+
 
 var app = express()
-
+const port = process.env.port || 5000;
 app.use(express.urlencoded({extended: true}))
 app.use(express.json());
 const cors = require("cors");
@@ -50,6 +50,6 @@ app.post('/login', function(req,res){
 
 
 
-app.listen(port,() => {
-  console.log(`Server running on port ${port}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
 });
