@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from "react";
-import { fetchHorror, fetchAnimation } from "./db/db";
+import { fetchHorror, fetchAnimation } from "/db/db.js";
 import MovieCard from "./MovieCard";
 import VideoPlayer from "./VideoPlayer";
 import { Link } from "react-router-dom";
