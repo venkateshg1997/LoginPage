@@ -71,7 +71,7 @@ function SignUp() {
 
     function handleinput(){
 
-      axios.post("http://localhost:5000/signup", form)
+      axios.post("https://loginpage-33.onrender.com/signup", form)
       .then((res)=>{
           console.log(res)
           navigate("/signuppage")
