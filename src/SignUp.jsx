@@ -3,8 +3,6 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function SignUp() {
-
-      
     const navigate = useNavigate()
     const [form,setForm] = useState({
       name: "",
