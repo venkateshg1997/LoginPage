@@ -9,6 +9,7 @@ const cors = require("cors");
 app.use(cors());
 let users = []
 app.post('/signup' , function(req,res){
+    
 
     const newuser= {
         name: req.body.name,
@@ -47,9 +48,7 @@ app.post('/login', function(req,res){
     }
 })
 
-
-app.listen(5000, function(){
-
-    console.log("Server Started ...");
-    
-})
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
+});
